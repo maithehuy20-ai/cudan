@@ -1,0 +1,8 @@
+{
+  "name": " Quản lý Cư trú Bình Phú 2.0",
+  "description": "Ứng dụng số hóa quản lý cư dân, quét mã QR CCCD và thống kê dữ liệu cư trú khu phố 16.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": []
+}

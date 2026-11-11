@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Square QR Scanner Viewfinder Overrides */
+#cccd-qr-reader-region {
+  border: none !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#cccd-qr-reader-region video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 0.75rem;
+}
+
+#cccd-qr-reader-region__scan_region {
+  aspect-ratio: 1 / 1 !important;
+}
+
+/* PWA Safe Area insets for iPhone, iPad and Android phone/tablet notches and home indicators */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  nav[aria-label="Điều hướng chính cuối trang"] {
+    padding-bottom: calc(0.375rem + env(safe-area-inset-bottom));
+  }
+}
+
+/* Prevent accidental pull-to-refresh on mobile & smooth touch response */
+html, body {
+  overscroll-behavior-y: contain;
+  -webkit-tap-highlight-color: transparent;
+}
+

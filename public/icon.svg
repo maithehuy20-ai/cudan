@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b91c1c"/>
+      <stop offset="50%" stop-color="#991b1b"/>
+      <stop offset="100%" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+
+  <!-- Shield Shape -->
+  <path d="M 256 64 C 340 64 416 112 416 192 C 416 320 288 416 256 448 C 224 416 96 320 96 192 C 96 112 172 64 256 64 Z"
+        fill="#991b1b" stroke="url(#gold)" stroke-width="14" filter="url(#shadow)"/>
+
+  <!-- Golden 5-point Star -->
+  <!-- Center: (256, 180), R=52, r=22 -->
+  <polygon points="
+    256,128 
+    271,165 
+    311,167 
+    280,192 
+    291,230 
+    256,206 
+    221,230 
+    232,192 
+    201,167 
+    241,165"
+    fill="url(#gold)" stroke="#ca8a04" stroke-width="2"/>
+
+  <!-- Badge Text KP 16 -->
+  <text x="256" y="305" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="52" fill="#ffffff" text-anchor="middle" letter-spacing="4">KP 16</text>
+  <text x="256" y="345" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="24" fill="#fde047" text-anchor="middle" letter-spacing="3">BÌNH PHÚ</text>
+
+  <!-- Subtitle -->
+  <text x="256" y="380" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="16" fill="#fca5a5" text-anchor="middle" letter-spacing="1">QUẢN LÝ CƯ TRÚ</text>
+</svg>
